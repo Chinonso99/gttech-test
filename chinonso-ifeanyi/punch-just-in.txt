@@ -1,0 +1,52 @@
+PUNCH JUST IN
+
+
+
+topStories = document.querySelectorAll('div.title-box')
+
+for (count = 0; count < topStories.length; count++) {
+	
+	document.write(topStories[count].textContent);
+	
+	document.write("<br/>")
+}
+
+
+No one can fault Buhari’s integrity, honesty, says Obasanjo’s son 
+Buhari reduces cost of UTME, SSCE forms 
+Former IG, CP re-arraigned over alleged N16.4m fraud 
+JUST IN: Kidnappers abduct Customs officer, kill businessman 
+Discrimination against black people, ‘pervasive’ in EU —report 
+Mother, baby killed in suspected bear attack 
+Togolese cook who allegedly killed Credit Switch boss alive – Prisons 
+EFCC drags businessman to court over false information 
+Fire destroys one room, seven shops in Kano 
+49-year-old guard hangs self over debt at Ekiti Secretariat 
+Police dismiss sergeant for allegedly killing undergraduate 
+Syphilis cases in Japan reach 47-year-high 
+Dr D.K Olukoya’s ‘Shalom Chorale’ shines at BBC gospel choir of the year competition 
+Royal reunions strengthen University of Dundee’s Nigerian links 
+Xiaomi Mi Band 3 – Is It the Best Fitness Tracker for the Budget 
+2019: Ortom orders arrest of those buying, selling PVCs 
+2019: Abdulsalami’s Peace Committee drums support for INEC 
+Buhari convenes meeting of Heads of State and Government of Lake Chad Basin Commission 
+Ensure prompt salary payments, Osun residents tell Oyetola 
+Buhari reduces cost of UTME, SSCE forms 
+Senate confirms Olukoyede as EFCC secretary 
+JUST IN: Nigeria climbs to 129th on world prosperity index 
+Russia to cut dependency on dollars —Putin 
+Learn how fixed deposits work 
+NSE CEO, Onyema, steps down as ASEA president 
+Investors snub oil, bank stocks, others 
+FITC boss promotes cash-flow lending 
+
+
+
+let response = {};
+for (let count = 0; count < topStories.length; count++) {
+response[count] = topStories[count].textContent;
+}
+document.write(JSON.stringify(response));
+
+
+{"0":"\nNo one can fault Buhari’s integrity, honesty, says Obasanjo’s son ","1":"\nBuhari reduces cost of UTME, SSCE forms ","2":"\nFormer IG, CP re-arraigned over alleged N16.4m fraud ","3":"\nJUST IN: Kidnappers abduct Customs officer, kill businessman ","4":"\nDiscrimination against black people, ‘pervasive’ in EU —report ","5":"\nMother, baby killed in suspected bear attack ","6":"\nTogolese cook who allegedly killed Credit Switch boss alive – Prisons ","7":"\nEFCC drags businessman to court over false information ","8":"\nFire destroys one room, seven shops in Kano ","9":"\n49-year-old guard hangs self over debt at Ekiti Secretariat ","10":"\nPolice dismiss sergeant for allegedly killing undergraduate ","11":"\nSyphilis cases in Japan reach 47-year-high ","12":"\nDr D.K Olukoya’s ‘Shalom Chorale’ shines at BBC gospel choir of the year competition ","13":"\nRoyal reunions strengthen University of Dundee’s Nigerian links ","14":"\nXiaomi Mi Band 3 – Is It the Best Fitness Tracker for the Budget ","15":"\n2019: Ortom orders arrest of those buying, selling PVCs ","16":"\n2019: Abdulsalami’s Peace Committee drums support for INEC ","17":"\nBuhari convenes meeting of Heads of State and Government of Lake Chad Basin Commission ","18":"\nEnsure prompt salary payments, Osun residents tell Oyetola ","19":"\nBuhari reduces cost of UTME, SSCE forms ","20":"\nSenate confirms Olukoyede as EFCC secretary ","21":"\nJUST IN: Nigeria climbs to 129th on world prosperity index ","22":"\nRussia to cut dependency on dollars —Putin ","23":"\nLearn how fixed deposits work ","24":"\nNSE CEO, Onyema, steps down as ASEA president ","25":"\nInvestors snub oil, bank stocks, others ","26":"\nFITC boss promotes cash-flow lending "}
